@@ -62,7 +62,7 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 /*
  * jQuery throttle / debounce - v1.1 - 3/7/2010
  * http://benalman.com/projects/jquery-throttle-debounce-plugin/
- * 
+ *
  * Copyright (c) 2010 "Cowboy" Ben Alman
  * Dual licensed under the MIT and GPL licenses.
  * http://benalman.com/about/license/
@@ -354,21 +354,21 @@ input:hover, textarea:hover {
 }
 
 input[type=checkbox] {
-	position:absolute; 
-  	z-index:-1000; 
-  	left:-1000px; 
-  	overflow: hidden; 
-  	clip: rect(0 0 0 0); 
-  	height:1px; 
-  	width:1px; 
-  	margin:-1px; 
-  	padding:0; 
+	position:absolute;
+  	z-index:-1000;
+  	left:-1000px;
+  	overflow: hidden;
+  	clip: rect(0 0 0 0);
+  	height:1px;
+  	width:1px;
+  	margin:-1px;
+  	padding:0;
   	border:0;
 }
 
 input[type=checkbox] + label.css-label {
   padding-left:37px;
-  height:32px; 
+  height:32px;
   display:inline-block;
   line-height:32px;
   background-repeat:no-repeat;
@@ -432,18 +432,18 @@ button:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  #sidebar, 
+  #sidebar,
   .left {
   	float: none;
 	max-width: 100%;
 	width: 100%;
   }
-  
+
   #sidebar {
 	border-left: none;
 	border-top: solid;
   }
-  
+
   a.button .link-internal,
   button {
   	width: 100%;
@@ -567,7 +567,7 @@ button:hover {
 }
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.passages.descriptions = {             
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.passages.descriptions = {
 	// uses the description mapped by the title
 		"Chimborazo": "A brief history of the city",
     "The citizens" : "The likes and dislikes of Chimborazans",
@@ -682,14 +682,14 @@ Macro.add("getLocation", {
         var progressTotal = getPercent * getProgressWrapWidth;
         var animationLength = 2500;
 				console.log([getPercent, getProgressWrapWidth]);
-        
+
         // on page load, animate percentage bar to data percentage length
         // .stop() used to prevent animation queueing
         $('.progress-bar').animate({
             left: progressTotal
         }, animationLength);
 			}, 1000);
-			
+
 			if(state.active.variables.player.PartyP <= 0 && state.active.variables.player.party !== "Unaffiliated"){
 						var workingAgainst = setInterval(function(){
 							state.active.variables.player.PublicP -= 2;
@@ -698,14 +698,14 @@ Macro.add("getLocation", {
 						clearInterval(workingAgainst);
 					}
     }
-		
+
 		postdisplay.fadeMessages = function() {
 			/* Enable messages fade out */
 			$('#messages').delay(5000).fadeOut(1000, function(){
 				/* Fade complete */
 			});
 		}
-		
+
 		console.log($('.progress-wrap'));
 
 macros['genUserId'] =
@@ -773,12 +773,12 @@ Macro.add("gameStarted", {
                             // TODO: do something with error, didn't save statement
                             return;
                         }
-    
+
                         console.log("Failed to save statement: " + err);
                         // TODO: do something with error, didn't save statement
                         return;
                     }
-    
+
                     console.log("Statement saved");
                     // TOOO: do something with success (possibly ignore)
                 }
@@ -832,12 +832,12 @@ Macro.add("readMaterials", {
                             // TODO: do something with error, didn't save statement
                             return;
                         }
-    
+
                         console.log("Failed to save statement: " + err);
                         // TODO: do something with error, didn't save statement
                         return;
                     }
-    
+
                     console.log("Statement saved");
                     // TOOO: do something with success (possibly ignore)
                 }
@@ -888,12 +888,12 @@ Macro.add("accessedPassage", {
                             // TODO: do something with error, didn't save statement
                             return;
                         }
-    
+
                         console.log("Failed to save statement: " + err);
                         // TODO: do something with error, didn't save statement
                         return;
                     }
-    
+
                     console.log("Statement saved");
                     // TOOO: do something with success (possibly ignore)
                 }
@@ -933,7 +933,7 @@ Macro.add("optionSelected", {
 								"extensions": {
 												"http://example.com/extensions/budget-remaining": state.active.variables.city.budgetInProgress,
 												"http://example.com/extensions/party-perception": state.active.variables.player.PartyP,
-												"http://example.com/extensions/public-perception": state.active.variables.player.PublicP, 
+												"http://example.com/extensions/public-perception": state.active.variables.player.PublicP,
 								}
             }
         });
@@ -948,12 +948,12 @@ Macro.add("optionSelected", {
                             // TODO: do something with error, didn't save statement
                             return;
                         }
-    
+
                         console.log("Failed to save statement: " + err);
                         // TODO: do something with error, didn't save statement
                         return;
                     }
-    
+
                     console.log("Statement saved");
                     // TOOO: do something with success (possibly ignore)
                 }
@@ -1010,12 +1010,12 @@ Macro.add("shareLocation", {
                             // TODO: do something with error, didn't save statement
                             return;
                         }
-    
+
                         console.log("Failed to save statement: " + err);
                         // TODO: do something with error, didn't save statement
                         return;
                     }
-    
+
                     console.log("Statement saved");
                     // TOOO: do something with success (possibly ignore)
                 }
@@ -1058,7 +1058,7 @@ Macro.add("gameComplete", {
 											"http://example.com/extensions/result-title": state.active.variables.player.resultTitle,
 											"http://example.com/extensions/budget-remaining": state.active.variables.city.budgetInProgress,
 											"http://example.com/extensions/party-perception": state.active.variables.player.PartyP,
-											"http://example.com/extensions/public-perception": state.active.variables.player.PublicP, 
+											"http://example.com/extensions/public-perception": state.active.variables.player.PublicP,
 										}
                 }
             }
@@ -1074,12 +1074,12 @@ Macro.add("gameComplete", {
                             // TODO: do something with error, didn't save statement
                             return;
                         }
-    
+
                         console.log("Failed to save statement: " + err);
                         // TODO: do something with error, didn't save statement
                         return;
                     }
-    
+
                     console.log("Statement saved");
                     // TOOO: do something with success (possibly ignore)
                 }
@@ -1106,7 +1106,7 @@ Macro.add("partyNoConfidence", {
 					} else {
 						clearInterval(workingAgainst);
 					}
-					
+
 				}
 
         catch (ex) {
@@ -1291,7 +1291,7 @@ Return to [[Town Hall]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="the Greensters" tags="information" position="781,110">&lt;&lt;readMaterials&gt;&gt;
 &lt;div class=&quot;container restricted&quot;&gt;
 &lt;h1 class=&quot;title&quot;&gt;Greensters&lt;/h1&gt;
-&lt;p&gt;The Greensters are the party in favor at the moment. They have a strong presence in Chimborazo and represent about one-third of the population.&lt;/p&gt; 
+&lt;p&gt;The Greensters are the party in favor at the moment. They have a strong presence in Chimborazo and represent about one-third of the population.&lt;/p&gt;
 &lt;div class=&quot;center-image&quot;&gt;
 [img[images/Greensters.png]]&lt;/div&gt;
 &lt;p&gt;Their platform includes:&lt;/p&gt;
@@ -1404,7 +1404,7 @@ Return to [[Town Hall]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="police vehicles" tags="information" position="364,545">&lt;&lt;readMaterials&gt;&gt;
 &lt;div class=&quot;container restricted&quot;&gt;
 &lt;h1 class=&quot;title&quot;&gt;Better Police Vehicles&lt;/h1&gt;
-&lt;p&gt;Officers have been complaining about their old Dodge Chargers for years. 
+&lt;p&gt;Officers have been complaining about their old Dodge Chargers for years.
 &lt;p&gt;It&#x27;s gotten to the point where teenagers are street racing in broad&lt;/p&gt; lamplight because they don&#x27;t have to worry about not being able to speed away from the cops in this town. &lt;/p&gt;
 &lt;p&gt;[[Chimborazo cops|Chimborazo&#x27;s Finest]] have been humiliated enough!&lt;/p&gt;
 &lt;a class=&quot;button&quot;&gt;&lt;&lt;click &quot;Return&quot; $return&gt;&gt;Back&lt;&lt;/click&gt;&gt;&lt;/a&gt;
@@ -1684,7 +1684,7 @@ Chimborazo sits in the heart of the &#x27;new South&#x27; of the United States a
 &lt;p&gt;You&#x27;re skating on very, very thin ice, Mayor &lt;&lt;print $player.name&gt;&gt;. Your party is quite upset with you. Watch yourself.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;p&gt;You can review your Public Safety choices or move on to Arts and Culture.&lt;/p&gt;
-&lt;a class=&quot;button&quot;&gt;&lt;&lt;back [[Review Public Safety|Public Safety Issue 1]]&gt;&gt;&lt;/a&gt; 
+&lt;a class=&quot;button&quot;&gt;&lt;&lt;back [[Review Public Safety|Public Safety Issue 1]]&gt;&gt;&lt;/a&gt;
 &lt;a class=&quot;button&quot;&gt;[[Move to Arts and Culture|Arts and Culture Issue 1]]&lt;/a&gt;
 &lt;/div&gt;
 &lt;div id=&quot;sidebar&quot;&gt;
@@ -1752,7 +1752,7 @@ Chimborazo sits in the heart of the &#x27;new South&#x27; of the United States a
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;if $player.campaignPromise.includes(&quot;arts funding&quot;)&gt;&gt;
 		&lt;&lt;set $player.PublicP += 6&gt;&gt;
-	&lt;&lt;/if&gt;&gt;	
+	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $city.publicSafetyFund.includes(&quot;tooCrisp&quot;) and visited() lte 1&gt;&gt;
 	&lt;&lt;optionSelected &quot;not to fund a new Advanced CRISPR Laboratory.&quot;&gt;&gt;
@@ -2197,7 +2197,7 @@ Chimborazo sits in the heart of the &#x27;new South&#x27; of the United States a
 	  &lt;&lt;/if&gt;&gt;
 	  &lt;&lt;if $player.campaignPromise.includes(&quot;arts funding&quot;)&gt;&gt;
 		  &lt;p class=&quot;alert alert-success&quot;&gt;&lt;&lt;print &quot;You kept a campaign promise!&quot;&gt;&gt;&lt;/p&gt;
-	  &lt;&lt;/if&gt;&gt;	
+	  &lt;&lt;/if&gt;&gt;
   &lt;&lt;/if&gt;&gt;
   &lt;&lt;if $city.publicSafetyFund.includes(&quot;tooCrisp&quot;)&gt;&gt;
 	  &lt;&lt;if $player.party eq &quot;Narnians&quot;&gt;&gt;
